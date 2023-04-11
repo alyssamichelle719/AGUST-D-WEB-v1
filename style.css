@@ -1,0 +1,243 @@
+html{
+    max-width: 100% !important;
+    overflow-x: hidden;
+    position: relative;
+    animation: fadein 1s;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body{
+    background-color: #444;
+    margin: 0px auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    
+}
+
+.menu{
+    position: fixed;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    z-index: 99;
+}
+
+.nav{
+    display: none;
+    color: #333;
+    padding: 10px;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav li{
+    display: block;
+    border: 1px solid black;
+    background: white;
+    color: #333;
+    padding: 10px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    transition: ease;
+    transition-duration: 1s;
+}
+
+.nav a:hover{
+    color: white;
+}
+
+.nav li:hover{
+    background: #333;
+    color: white;
+}
+
+
+
+/* Page ID Stylings */
+
+#landing {
+    max-width: 100% !important;
+}
+
+#landing-img{
+    position: absolute;
+    width: 1200px;
+    top: 50px;
+    left: 500px;
+    opacity: 50%;
+}
+
+
+
+/* About Landing Styling */
+
+#about{
+    max-width: 100% !important;
+    background: #999;
+    padding: 5px;
+    position: relative;
+
+}
+
+#about_img{
+    float: right;
+    display: block;
+    box-shadow: 3px 3px 10px #111;
+    width: 600px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#about p{
+    padding: 5px;
+}
+
+
+
+/* Discography Landing Styling */
+
+#discography{
+    max-width: 100% !important;
+    background: #444;
+    padding: 5px;
+    position: relative;
+}
+
+#disco_img {
+    width: 600px;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    box-shadow: 3px 3px 10px #111;
+
+}
+
+.album_info {
+    font-size: 1.5em;
+    position: absolute;
+    left: 700px;
+}
+
+.album_info h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-shadow: 2px 2px #666;
+}
+
+.album_info h3 {
+    font-size: 1em;
+}
+
+.album_info i {
+    margin-right: 40px;
+    margin-top: 15px;
+}
+
+
+
+/* Social Landing Styling */
+
+#social{
+    max-width: 100% !important;
+    background: #999;
+    padding: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background: #444;
+    font-size: 1em;
+}
+
+
+
+/* Text Stylings */
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: ease;
+    transition-duration: 1s;
+}
+
+a:hover {
+    color: #888;
+}
+
+h1 {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10em;
+    font-weight: normal;
+}
+
+p {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+
+
+/* Mobile Loading */
+
+@media screen and (min-width: 960px) {
+
+    html, body {
+       max-width: 100%;
+    }
+
+    #landing{
+        width: 100%;
+    }
+
+    #landing-img{
+        position: absolute;
+        width: 75%;
+        top: 50px;
+        left: 200px;
+        opacity: 50%;
+    }
+}
+
+
+
+@media screen and (min-width: 480px) {
+ 
+    html, body {
+         max-width: 100%;
+     }
+
+     #landing{
+        width: 100%;
+    }
+ 
+     #landing-img{
+         position: absolute;
+         width: 75%;
+         top: 50px;
+         left: 200px;
+         opacity: 50%;
+     }
+ }
